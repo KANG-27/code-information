@@ -1,15 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Coded Information</title>
+    <link
+      href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../CSS/navbar.css" />
+  </head>
+  <body>
+    <div class="sidebar">
+      <div class="logo_content">
+        <div class="logo">
+          <i class="bx bxs-briefcase-alt-2"></i>
+          <div class="logo_name">Coded I</div>
+        </div>
+        <i class="bx bx-menu" id="btn"></i>
+      </div>
+      <ul class="nav_list">
+        <li>
+          <a href="#">
+            <i class="bx bxs-dashboard"></i>
+            <span class="links_name">Dashboard</span>
+          </a>
+          <span class="tooltip">DashBoard</spans>
+        </li>
+        <li>
+          <a href="#">
+            <i class="bx bx-grid-alt"></i>
+            <span class="links_name">Graficas</span>
+          </a>
+          <span class="tooltip">Graficas</spans>
+        </li>
+      </ul>
+      <div class="profile_content">
+        <div class="profile">
+          <div class="profile_details">
+            <img src="../image/userimage.jpeg" alt="" />
+            <div class="name_job">
+              <div class="name">Jose Acosta</div>
+              <div class="job">Programador</div>
+            </div>
+          </div>
+          <a href="login.html">
+          <i class="bx bx-log-out" id="log_out"></i>
+        </a>
+        </div>
+      </div>
+    </div>
+    <div class="home_content">
+        <div class="text">Home Content</div>
+    </div>
 
-
-    <a href="login.html">Login</a>
-</body>
+    <script src="../js/index.js"></script>
+  </body>
 </html>

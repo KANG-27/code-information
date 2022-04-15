@@ -1,0 +1,13 @@
+
+.figure1 {
+    padding: 20px 0px 20px 100px;
+    width:800px;
+    height:200px;
+}
+
+.text_figure1 {
+    font-size: 15px;
+    font-weight: 500;
+    color: #1d1b31;
+    /* margin: 12px; */
+}

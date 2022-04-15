@@ -10,6 +10,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../CSS/navbar.css" />
+    <link rel="stylesheet" href="../CSS/index.css" />
   </head>
   <body>
     <div class="sidebar">
@@ -29,7 +30,7 @@
           <span class="tooltip">DashBoard</spans>
         </li>
         <li>
-          <a href="#">
+          <a href="./graficas.html">
             <i class="bx bx-grid-alt"></i>
             <span class="links_name">Graficas</span>
           </a>
@@ -52,9 +53,18 @@
       </div>
     </div>
     <div class="home_content">
-        <div class="text">Home Content</div>
+        <div class="text">Home Dashboard</div>
+        <div class="figure1">
+          <canvas id="myChart"></canvas>
+          <div class="text_figure1">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem laborum, quisquam rerum mollitia ullam magnam doloribus reiciendis ut ea eligendi, repellat nihil explicabo quo esse praesentium repellendus. Atque, consequuntur explicabo?</p>
+          </div>
+        </div>
     </div>
+    
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.1/chart.min.js" integrity="sha512-QSkVNOCYLtj73J4hbmVoOV6KVZuMluZlioC+trLpewV8qMjsWqlIQvkn1KGX2StWvPMdWGBqim1xlC8krl1EKQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="../js/index.js"></script>
+    <script src="../js/navbar.js"></script>
   </body>
 </html>

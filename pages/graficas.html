@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Graficas</title>
+    <link
+      href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../CSS/navbar.css" />
+    <link rel="stylesheet" href="../CSS/graficas.css" />
+
+
+</head>
+<body>
+    <div class="sidebar">
+        <div class="logo_content">
+          <div class="logo">
+            <i class="bx bxs-briefcase-alt-2"></i>
+            <div class="logo_name">Coded I</div>
+          </div>
+          <i class="bx bx-menu" id="btn"></i>
+        </div>
+        <ul class="nav_list">
+          <li>
+            <a href="index.html">
+              <i class="bx bxs-dashboard"></i>
+              <span class="links_name">Dashboard</span>
+            </a>
+            <span class="tooltip">DashBoard</spans>
+          </li>
+          <li>
+            <a href="./graficas.html">
+              <i class="bx bx-grid-alt"></i>
+              <span class="links_name">Graficas</span>
+            </a>
+            <span class="tooltip">Graficas</spans>
+          </li>
+        </ul>
+        <div class="profile_content">
+          <div class="profile">
+            <div class="profile_details">
+              <img src="../image/userimage.jpeg" alt="" />
+              <div class="name_job">
+                <div class="name">Jose Acosta</div>
+                <div class="job">Programador</div>
+              </div>
+            </div>
+            <a href="login.html">
+            <i class="bx bx-log-out" id="log_out"></i>
+          </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="home_content">
+        <div class="text">Home Graficas</div>
+        <div class="figure1">
+          <canvas id="myChart"></canvas>
+          <div class="text_figure1">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem laborum, quisquam rerum mollitia ullam magnam doloribus reiciendis ut ea eligendi, repellat nihil explicabo quo esse praesentium repellendus. Atque, consequuntur explicabo?</p>
+          </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.1/chart.min.js" integrity="sha512-QSkVNOCYLtj73J4hbmVoOV6KVZuMluZlioC+trLpewV8qMjsWqlIQvkn1KGX2StWvPMdWGBqim1xlC8krl1EKQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="../js/navbar.js"></script>
+    <script src="../js/graficas.js"></script>
+</body>
+</html>

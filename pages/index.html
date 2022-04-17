@@ -5,14 +5,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Coded Information</title>
+    <!-- ICONS -->
     <link
       href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
       rel="stylesheet"
     />
+    <!-- STYLE NAVBAR -->
     <link rel="stylesheet" href="../CSS/navbar.css" />
+    <!-- ESTYLES -->
     <link rel="stylesheet" href="../CSS/index.css" />
   </head>
+
   <body>
+    <!-- NAVBAR -->
     <div class="sidebar">
       <div class="logo_content">
         <div class="logo">
@@ -27,14 +32,14 @@
             <i class="bx bxs-dashboard"></i>
             <span class="links_name">Dashboard</span>
           </a>
-          <span class="tooltip">DashBoard</spans>
+          <span class="tooltip">DashBoard </span>
         </li>
         <li>
           <a href="./graficas.html">
             <i class="bx bx-grid-alt"></i>
             <span class="links_name">Graficas</span>
           </a>
-          <span class="tooltip">Graficas</spans>
+          <span class="tooltip">Graficas</span>
         </li>
       </ul>
       <div class="profile_content">
@@ -47,23 +52,90 @@
             </div>
           </div>
           <a href="login.html">
-          <i class="bx bx-log-out" id="log_out"></i>
-        </a>
+            <i class="bx bx-log-out" id="log_out"></i>
+          </a>
         </div>
       </div>
     </div>
+
     <div class="home_content">
+      <div class="text_content">
         <div class="text">Home Dashboard</div>
+      </div>
+      <div class="banner">
+        <img src="../image/imgindex/control.jpg" alt="control" />
+      </div>
+
+      <!-- GRAFICA -->
+      <div class="content_figures">
         <div class="figure1">
           <canvas id="myChart"></canvas>
-          <div class="text_figure1">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem laborum, quisquam rerum mollitia ullam magnam doloribus reiciendis ut ea eligendi, repellat nihil explicabo quo esse praesentium repellendus. Atque, consequuntur explicabo?</p>
-          </div>
         </div>
-    </div>
-    
+        <div class="figure2">
+          <canvas id="myChart2"></canvas>
+        </div>
+      </div>
+      <div class="content_detail">
+        <!-- CRUD -->
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.1/chart.min.js" integrity="sha512-QSkVNOCYLtj73J4hbmVoOV6KVZuMluZlioC+trLpewV8qMjsWqlIQvkn1KGX2StWvPMdWGBqim1xlC8krl1EKQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <!-- TITLE -->
+        <div class="title">
+          <h1>AGENDA DE TAREAS</h1>
+          <p>Agregar tarea:</p>
+        </div>
+
+        <!-- INPUT AGREGAR -->
+        <div class="form">
+          <form action="javascript:void(0);" method="POST" onsubmit="app.Add()">
+            <input type="text" id="add-todo" placeholder="Agregar Tarea" />
+            <input type="submit" value="Agregar" />
+          </form>
+          <p>Tienes:</p>
+          <p id="counter"></p>
+          <table>
+            <tr class="to-do">
+              <th><h3>Tareas</h3></th>
+            </tr>
+            <tbody id="tasks"></tbody>
+          </table>
+        </div>
+
+        <!-- INPUT EDITAR -->
+        <div id="edit-box" role="arian-hidden">
+          <form action="javascript:void(0)" method="POST" id="save-edit">
+            <input type="text" id="edit-todo" />
+            <input type="submit" value="Guardar" />
+            <a onclick="CloseInput()" aria-label="Close">X</a>
+          </form>
+        </div>
+      </div>
+
+      <footer class="footer">
+        <div class="links_footer">
+          <a href="#">
+            <i class='bx bxl-facebook'></i>
+            <span class="links_name">Facebook</span>
+          </a>
+          <a href="#">
+            <i class='bx bxl-instagram' ></i>
+            <span class="links_name">Instagram</span>
+          </a>
+          <a href="#">
+            <i class='bx bxl-gmail'></i>
+            <span class="links_name">Gmail</span>
+          </a>        </div>
+        
+        <div class="text_footer">Todos los dertechos reservados</div>
+      </footer>
+    </div>
+
+    <!-- SCRIPTS -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.1/chart.min.js"
+      integrity="sha512-QSkVNOCYLtj73J4hbmVoOV6KVZuMluZlioC+trLpewV8qMjsWqlIQvkn1KGX2StWvPMdWGBqim1xlC8krl1EKQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
     <script src="../js/index.js"></script>
     <script src="../js/navbar.js"></script>
   </body>

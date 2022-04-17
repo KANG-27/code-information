@@ -1,13 +1,119 @@
-
-.figure1 {
-    padding: 20px 0px 20px 100px;
-    width:800px;
-    height:200px;
+.banner img {
+  width: 100%;
+  height: 50%;
+  object-fit: cover;
+  position: absolute;
 }
 
-.text_figure1 {
-    font-size: 15px;
-    font-weight: 500;
-    color: #1d1b31;
-    /* margin: 12px; */
+/* FIGURES */
+
+.figure1 {
+  margin: 20px;
+  width: 750px;
+  height: 200px;
+  /* position: relative; */
+}
+
+.figure2 {
+  margin: 20px;
+  width: 750px;
+  height: 200px;
+  /* position: relative; */
+}
+
+.content_figures {
+  display: flex;
+  margin-top: 500px;
+}
+
+/* TODO VA AQUI DENTRO */
+
+.content_detail {
+  font-size: 15px;
+  font-weight: 500;
+  color: #1d1b31;
+  margin: 12px;
+  margin-top: 200px;
+}
+
+/* CRUD */
+
+.tablecrud {
+  position: absolute;
+  height: 100%;
+  width: calc(100% - 78px);
+  left: 78px;
+  transition: all 0.5s ease;
+  scroll-behavior: auto;
+}
+
+.title {
+  text-align: center;
+}
+
+.form {
+  margin: auto;
+  max-width: 80%;
+  text-align: center;
+  margin-bottom: 300px;
+}
+
+input[type="submit"],
+button,
+[arial-label] {
+  cursor: pointer;
+  border-radius: 6px;
+  background: #1d1b31;
+  color: white;
+  font-size: 15px;
+  padding: 5px 15px;
+}
+
+#edit-box {
+  display: none;
+  max-width: 80%;
+  margin: auto;
+  margin-top: 10px;
+}
+
+td {
+  background-color: aliceblue;
+  padding-right: 10px;
+  text-align: left;
+}
+
+.to-do {
+  background: transparent !important;
+}
+
+#add-todo {
+  width: 100%;
+  margin: 10px;
+  border-radius: 6px;
+  pointer-events: painted;
+}
+
+.footer {
+  background: #11101d;
+  margin: 0;
+  padding: 0;
+}
+.links_footer {
+  text-align: center;
+  padding: 20px;
+}
+.footer a {
+  color: aliceblue;
+  text-decoration: none;
+  align-items: center;
+  margin: 40px;
+}
+
+.text_footer {
+  font-size: 25px;
+  font-weight: 500;
+  color: white;
+  padding: 12px;
+  margin: 0;
+  text-align: center;
 }

@@ -1,7 +1,6 @@
 .figure1 {
-    padding: 20px 0px 20px 100px;
-    width:800px;
-    height:200px;
+  margin: 0 0 0 80px;
+  width: 20%;
 }
 
 .text_figure1 {
@@ -10,3 +9,7 @@
     color: #1d1b31;
     /* margin: 12px; */
 }
+
+/* .contenedor_principal {
+    display: flex;
+} */
